@@ -36,10 +36,6 @@ footer
     margin-left: -2.5em
     background: url(/assets/images/arrow.svg) no-repeat
     background-size: 5em 2.5em
-
-  a:hover
-    background: rgba(0,0,0,0.2)
-    color: white
 .description
   border-top: solid 1px rgba(255, 255, 255, 0.5)
   color: white
@@ -167,6 +163,11 @@ footer
   display: grid
   grid-gap: 30px
   padding-top: 30px
+  justify-items: center
+  a 
+    margin: 20px
+  .header-text
+    text-shadow: none
 .stop
     background: white
     display: grid 
@@ -184,6 +185,7 @@ footer
         line-height: 1.75em
         font-size: 1.6em
         margin: 20px 0px
+        letter-spacing: 0.2em
       p
         font-size: 1.2em
 
@@ -199,13 +201,29 @@ footer
     .walking-cycling2
       background: url(/assets/images/walking_cycling2.jpeg) no-repeat
       background-size: cover
+    .pub1
+      background: url(/assets/images/pub1.jpeg) no-repeat
+      background-size: cover
+    .pub2
+      background: url(/assets/images/pub4.jpeg) no-repeat
+      background-size: cover
+    .bath2
+      background: url(/assets/images/bath2.jpeg) no-repeat
+      background-size: cover
+      width: 100% !important
 #pub_crawl
   height: 600px
-  background: lightpink
+  text-align: center
 
 #gallery
-  height: 500px
-  background: lightgreen
+  background: white
+
+#copyright
+  text-align: center
+  padding: 20px 0px
+  span
+    color: white
+    font-size: 0.8em
 
 #contact
   height: 500px
@@ -233,9 +251,20 @@ footer
   background: white
   color: #3a3939
 
+.nav-btn-neutral:hover
+  background: rgba(0,0,0,0.2)
+  color: white
+
 .nav-btn-excited
   @extend %btn-shared
   background: #35b88f
+  border: 2px solid #35b88f
+  width: 100px
+
+.nav-btn-excited:hover
+  background: rgba(0,0,0,0.2)
+  color: #35b88f
+
 
 @media (max-width: 600px)
   .article
