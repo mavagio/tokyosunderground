@@ -104,15 +104,11 @@ footer
     width: 100%
     align-self: center
 
-@media (max-width: 600px)
-  .article
-    grid-template-columns: 1fr
-
 #tours
   height: 70vh
   position: relative
   h2 
-    padding-top: 10%
+    padding-top: 30px
   .background-paralax
     position: absolute
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('/assets/images/header_image.jpeg')
@@ -168,14 +164,41 @@ footer
 
 #full_day_tour
   background: #5a5959 url(/assets/images/banner.svg) bottom center no-repeat
-  height: 50vh
-  .stop
+  display: grid
+  grid-gap: 30px
+  padding-top: 30px
+.stop
     background: white
     display: grid 
     grid-template-columns: 1fr 1fr
-    max-width: 1000px
+    max-width: 1140px
     margin: 0 auto
+    .stop-text-container
+      text-align: center
+      padding: 30px 20px
+      display: grid
+      grid-template-rows: 1fr 2fr
+      span 
+        text-transform: uppercase
+        font-weight: 400
+        line-height: 1.75em
+        font-size: 1.6em
+        margin: 20px 0px
+      p
+        font-size: 1.2em
 
+    .image-container
+      height: 400px
+      .img
+        height: 100%
+        display: inline-block
+        width: 50%
+    .walking-cycling1
+      background: url(/assets/images/walking_cycling1.jpeg) no-repeat
+      background-size: cover
+    .walking-cycling2
+      background: url(/assets/images/walking_cycling2.jpeg) no-repeat
+      background-size: cover
 #pub_crawl
   height: 600px
   background: lightpink
@@ -213,3 +236,9 @@ footer
 .nav-btn-excited
   @extend %btn-shared
   background: #35b88f
+
+@media (max-width: 600px)
+  .article
+    grid-template-columns: 1fr
+  .stop
+    grid-template-columns: 1fr
