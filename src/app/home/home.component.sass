@@ -96,25 +96,24 @@ footer
       margin-bottom: 0
     p 
       text-align: justify
-  .guide-image 
+  .daniel-image
     background: url(/assets/images/daniel.jpeg) no-repeat
-    background-size: cover
-    height: 50vh
-    width: 100%
-    align-self: center
-  .guide2-image
+  .fumi-image
     background: url(/assets/images/fumi.jpeg) no-repeat
-    background-size: cover
-    height: 50vh
-    width: 100%
+  .guide-image 
+    height: 60vh
+    width: 60%
+    margin: 0 auto
     align-self: center
+    background-size: cover
 
 
 #tours
-  height: 70vh
   position: relative
   h2 
     padding-top: 30px
+    font-size: 1.5rem
+    font-weight: 300
   .background-paralax
     position: absolute
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('/assets/images/header_image.jpeg')
@@ -132,39 +131,32 @@ footer
     grid-template-columns: 1fr 1fr
     justify-items: center
     align-items: center
-    
+    span
+      color: white
+      font-weight: 400
+      font-size: 1.5rem
+      text-transform: uppercase
+      line-height: 1.75rem
+      text-shadow: 0px 0px 8px black
+      top: 60%
+      position: relative
+  .full-day-tours-tag
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('/assets/images/chuo_line.jpeg')
+  .pub-crawl-tag
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(/assets/images/pub1.jpeg)
+  .pub-crawl-tag:hover, .full-day-tours-tag:hover 
+    box-shadow: 0px 0px 15px 3px #ffffff
   .full-day-tours-tag, .pub-crawl-tag
-    height: 40vh
-    width: 60vw
-    background: white
+    height: 80%
+    min-width: 350px
     border-radius: 8px
     text-decoration: none
     text-align: center
     text-justify: center
     border: 1px solid white
     transition: left 1s ease-in-out, background-color 1s ease-out 1s
-    span
-      color: white
-      font-weight: 400
-      font-size: 1.4em
-      text-transform: uppercase
-      line-height: 1.75em
-      text-shadow: 0px 0px 8px black
-      top: 60%
-      position: relative
-  .full-day-tours-tag
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('/assets/images/chuo_line.jpeg')
+    background-position: bottom
     background-size: cover
-  .full-day-tours-tag:hover 
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('/assets/images/chuo_line.jpeg')
-    background-size: cover
-  .pub-crawl-tag
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(/assets/images/pub1.jpeg)
-    background-size: cover
-  .pub-crawl-tag:hover
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(/assets/images/pub1.jpeg)
-    background-size: cover
-    transition: box-shadow .15s ease
   footer
     text-align: center
 
@@ -281,3 +273,9 @@ footer
     grid-template-columns: 1fr
   .stop
     grid-template-columns: 1fr
+  .full-day-tours-tag, .pub-crawl-tag
+    height: 40vh !important
+    width: 40vw !important
+    min-width: 0 !important
+  .guide-image 
+    width: 100% !important
