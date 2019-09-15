@@ -5,7 +5,7 @@ import { PubcrawlComponent } from './pubcrawl/pubcrawl.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'pubcrawl', component: PubcrawlComponent},
+  { path: 'pubcrawl/:id', component: PubcrawlComponent, },
   { path: '**', redirectTo: ''},
 ];
 
