@@ -103,19 +103,14 @@
         margin-bottom: 0
       p 
         text-align: justify
-  .metro-map
-    background: url(/assets/images/map1.jpeg) no-repeat
-    max-width: 1000px
-    height: 500px
-    margin: 0 auto
   .video-container 
     position: relative
     top: 0
     width: 100%
     background: white
-    .recipe-video 
-      height: 500px
-      width: 100%
+  .recipe-video 
+    height: 500px
+    width: 100%
   #copyright
     text-align: center
     padding: 20px 0px
@@ -123,9 +118,20 @@
       color: #30395E
       font-size: 0.8em
 
+  .metro-map
+    background: url(/assets/images/map1.jpeg) no-repeat
+    max-width: 1000px
+    height: 500px
+    margin: 0 auto
+    z-index: 2
+    position: relative
+    box-shadow: 0 0 5px 10px white
+
   @media screen and (max-width: 600px)
     .content-container 
       grid-template-columns: 1fr
+    .recipe-video 
+      height: 300px
 
   
 
