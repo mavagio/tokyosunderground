@@ -15,8 +15,7 @@
     "server": "node local.js",
     "build:prod": "npm run build:ssr",
     "serve:prerender": "node static.js",
-    "build:prerender": "npm run build:prod && node dist/prerender.js",
-    "build:cloud": "npm run build:prod && npm run serve:ssr"
+    "build:prerender": "npm run build:prod && node dist/prerender.js"
   },
   "private": true,
   "dependencies": {
